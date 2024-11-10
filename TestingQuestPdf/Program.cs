@@ -31,32 +31,56 @@ Document document = Document.Create(container =>
                 col.Item().Text(Placeholders.LongDate());
                 col.Item().Image(Placeholders.Image(200, 100));
 
-                // Add Table with Borders
-                col.Item().Table(table =>
+                // Add Two Tables Side by Side
+                col.Item().Row(row =>
                 {
-                    // Define the number of columns
-                    table.ColumnsDefinition(columns =>
+                    row.RelativeItem().Table(table =>
                     {
-                        columns.RelativeColumn(); // Auto size column
-                        columns.RelativeColumn(); // Auto size column
-                        columns.RelativeColumn(); // Auto size column
+                        // First Table
+                        table.ColumnsDefinition(columns =>
+                        {
+                            columns.RelativeColumn();
+                            columns.RelativeColumn();
+                        });
+
+                        // Header for First Table
+                        table.Header(header =>
+                        {
+                            header.Cell().Border(1).BorderColor(Colors.Grey.Medium).Text("Col 1A").SemiBold();
+                            header.Cell().Border(1).BorderColor(Colors.Grey.Medium).Text("Col 2A").SemiBold();
+                        });
+
+                        // Data Rows for First Table
+                        for (int i = 0; i < 3; i++)
+                        {
+                            table.Cell().Border(1).BorderColor(Colors.Grey.Lighten1).Text($"Row {i + 1}, 1A");
+                            table.Cell().Border(1).BorderColor(Colors.Grey.Lighten1).Text($"Row {i + 1}, 2A");
+                        }
                     });
 
-                    // Add a header row with borders
-                    table.Header(header =>
+                    row.RelativeItem().Table(table =>
                     {
-                        header.Cell().Border(1).BorderColor(Colors.Grey.Medium).Text("Column 1").SemiBold();
-                        header.Cell().Border(1).BorderColor(Colors.Grey.Medium).Text("Column 2").SemiBold();
-                        header.Cell().Border(1).BorderColor(Colors.Grey.Medium).Text("Column 3").SemiBold();
-                    });
+                        // Second Table
+                        table.ColumnsDefinition(columns =>
+                        {
+                            columns.RelativeColumn();
+                            columns.RelativeColumn();
+                        });
 
-                    // Add data rows with borders
-                    for (int i = 0; i < 5; i++)
-                    {
-                        table.Cell().Border(1).BorderColor(Colors.Grey.Lighten1).Text($"Row {i + 1}, Col 1");
-                        table.Cell().Border(1).BorderColor(Colors.Grey.Lighten1).Text($"Row {i + 1}, Col 2");
-                        table.Cell().Border(1).BorderColor(Colors.Grey.Lighten1).Text($"Row {i + 1}, Col 3");
-                    }
+                        // Header for Second Table
+                        table.Header(header =>
+                        {
+                            header.Cell().Border(1).BorderColor(Colors.Grey.Medium).Text("Col 1B").SemiBold();
+                            header.Cell().Border(1).BorderColor(Colors.Grey.Medium).Text("Col 2B").SemiBold();
+                        });
+
+                        // Data Rows for Second Table
+                        for (int i = 0; i < 3; i++)
+                        {
+                            table.Cell().Border(1).BorderColor(Colors.Grey.Lighten1).Text($"Row {i + 1}, 1B");
+                            table.Cell().Border(1).BorderColor(Colors.Grey.Lighten1).Text($"Row {i + 1}, 2B");
+                        }
+                    });
                 });
             });
 
@@ -70,6 +94,6 @@ Document document = Document.Create(container =>
     });
 });
 
-document.GeneratePdf("hello_with_borders.pdf");
+document.GeneratePdf("two_tables_side_by_side.pdf");
 
 document.ShowInCompanion();
