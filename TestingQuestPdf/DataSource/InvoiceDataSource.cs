@@ -12,10 +12,11 @@ namespace TestingQuestPdf.DataSource
         public Invoice GetInvoice()
         {
             List<InvoiceDetails> list = new List<InvoiceDetails>() {
-            new InvoiceDetails { Code = "Fixed Sub", Value = "20,000" },
-            new InvoiceDetails { Code = "Variant Sub", Value = "10,000" },
-            new InvoiceDetails { Code = "Total", Value = "30,0000" }
+                new InvoiceDetails { Code = "الاشتراك الثابت", Value = "20,000" }, 
+                new InvoiceDetails { Code = "الاشتراك المتغير", Value = "10,000" },
+                new InvoiceDetails { Code = "المجموع", Value = "30,000" }
             };
+
 
             return new Invoice
             {

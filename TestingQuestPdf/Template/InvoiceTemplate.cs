@@ -28,6 +28,7 @@ namespace TestingQuestPdf.Template
                        .Page(page =>
                        {
                            page.Margin(50);
+                           page.Size(PageSizes.A4);
                            page.Header().Element(ComposeHeader);
                            page.Content().Element(ComposeContent);
                            page.Footer().Element(ComposeFooter);
@@ -37,39 +38,122 @@ namespace TestingQuestPdf.Template
         #region Header
         void ComposeHeader(IContainer container)
         {
-            var titleStyle = TextStyle.Default.FontSize(20).SemiBold().FontColor(Colors.Blue.Medium);
+            TextStyle titleStyle = TextStyle
+                .Default
+                .FontSize(17)
+                .SemiBold()
+                .FontColor(Colors.Indigo.Darken1);
 
-            container.Row(row =>
+            container.Column(column =>
             {
-                row.RelativeItem().Column(column =>
-                {
-                    column.Item().Text($"Invoice #{Invoice.ReferenceCode}").Style(titleStyle);
-
-                    column.Item().Text(text =>
+                column
+                    .Item()
+                    .Row(row =>
                     {
-                        text.Span("Issue date: ").SemiBold();
-                        text.Span($"{Invoice.ReferenceCode}");
+                        row.ConstantItem(70)
+                            .Height(70)
+                            .Image("./Assets/sgbl-logo.png");
+
+                        row.RelativeItem()
+                            .AlignRight()
+                            .Column(column =>
+                            {
+                                column.Item()
+                                    .Text(DateTime.Now.ToString("dd/MM/yyyy"))
+                                    .AlignRight()
+                                    .FontSize(12);
+                            });
                     });
 
-                    column.Item().Text(text =>
+                column
+                .Item()
+                .PaddingTop(10)
+                .Row(row =>
+                {
+                    row.RelativeItem().Column(column =>
                     {
-                        text.Span("Due date: ").SemiBold();
-                        text.Span($"{Invoice.ReferenceCode}");
+                        column
+                            .Item()
+                            .BorderTop(1)
+                            .BorderColor(Colors.Red.Lighten1)
+                            .BorderBottom(1)
+                            .BorderColor(Colors.Red.Lighten1)
+                            .Background(Colors.Grey.Lighten2)
+                            .TranslateY(8)
+                            .AlignCenter()
+                            .Text(text =>
+                            {
+                                text.DefaultTextStyle(TextStyle.Default.LineHeight(1));
+
+                                text.Line("نسخة عن فاتورة الهاتف")
+                                    .Style(titleStyle);
+
+                                text.Line("عن شهر حزيران 2024")
+                                    .Style(titleStyle);
+                            });
                     });
                 });
 
-                row.ConstantItem(100).Height(50).Placeholder();
+                column
+                    .Item()
+                    .PaddingTop(10)
+                    .Row(row =>
+                    {
+                        row.RelativeItem()
+                            .Column(column =>
+                            {
+                                column
+                                    .Item()
+                                    .AlignLeft()
+                                    .TranslateX(100)
+                                    .Text("العنوان: بيروت");
+                            });
+
+                        row.RelativeItem()
+                            .Column(column =>
+                            {
+                                column
+                                    .Item()
+                                    .AlignRight()
+                                    .Text("الاسم: محمد");
+                            });
+                    });
+
+
+                column
+                .Item()
+                .PaddingTop(10)
+                .Row(row =>
+                {
+                    row.RelativeItem()
+                        .Column(column =>
+                        {
+                            column
+                                .Item()
+                                .AlignLeft()
+                                .TranslateX(100)
+                                .Text("العنوان: بيروت");
+                        });
+
+                    row.RelativeItem()
+                        .Column(column =>
+                        {
+                            column
+                                .Item()
+                                .AlignRight()
+                                .Text("الاسم: محمد");
+                        });
+                });
             });
         }
+
         #endregion
 
         #region Content
         void ComposeContent(IContainer container)
         {
-            container.PaddingVertical(40).Column(column =>
+            container.PaddingVertical(20).Column(column =>
             {
-                column.Spacing(5);
-
                 column.Item().Element(ComposeTable);
             });
         }
@@ -78,41 +162,45 @@ namespace TestingQuestPdf.Template
         {
             container.Table(table =>
             {
-                // step 1
                 table.ColumnsDefinition(columns =>
                 {
-                    columns.ConstantColumn(25);
-                    columns.RelativeColumn(3);
-                    columns.RelativeColumn();
+                    columns.RelativeColumn(5);
+                    columns.RelativeColumn(5);
                 });
 
-                // step 2
                 table.Header(header =>
                 {
-                    header.Cell().Element(CellStyle).Text("#");
-                    header.Cell().Element(CellStyle).Text("Invoice");
-                    header.Cell().Element(CellStyle).AlignRight().Text("Value");
+                    header.Cell().Element(CellStyle).Text("القيمة ل.ل").AlignRight();
+                    header.Cell().Element(CellStyle).AlignRight().Text("الخدمة");
 
                     static IContainer CellStyle(IContainer container)
                     {
-                        return container.DefaultTextStyle(x => x.SemiBold()).PaddingVertical(5).BorderBottom(1).BorderColor(Colors.Black);
+                        return container
+                            .DefaultTextStyle(x => x.SemiBold().FontSize(12)) // Make the text semi-bold and larger
+                            .Border(1)
+                            .BorderColor(Colors.Grey.Lighten1)
+                            .Background(Colors.Grey.Lighten2)
+                            .Padding(5);
                     }
                 });
 
-                // step 3
+
                 foreach (InvoiceDetails item in Invoice.InvoiceDetails)
                 {
-                    table.Cell().Element(CellStyle).Text(1.ToString());
-                    table.Cell().Element(CellStyle).Text(item.Code);
-                    table.Cell().Element(CellStyle).AlignRight().Text($"{item.Value}$");
+                    table.Cell().Element(CellStyle).Text(item.Value.ToString()).AlignRight();
+                    table.Cell().Element(CellStyle).Text(item.Code).AlignRight();
 
                     static IContainer CellStyle(IContainer container)
                     {
-                        return container.BorderBottom(1).BorderColor(Colors.Grey.Lighten2).PaddingVertical(5);
+                        return container
+                            .Border(1)
+                            .BorderColor(Colors.Grey.Lighten1)
+                            .Padding(5);
                     }
                 }
             });
         }
+
         #endregion
 
         #region Compose Footer
