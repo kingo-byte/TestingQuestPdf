@@ -256,7 +256,7 @@ namespace TestingQuestPdf.Template
             {
                 return container
                     .Height(1)
-                    .Background(Colors.Grey.Lighten2)
+                    .Background(Colors.Grey.Lighten1)
                     .ExtendHorizontal();
             }
         }
