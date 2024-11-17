@@ -93,57 +93,6 @@ namespace TestingQuestPdf.Template
                             });
                     });
                 });
-
-                column
-                    .Item()
-                    .PaddingTop(10)
-                    .Row(row =>
-                    {
-                        row.RelativeItem()
-                            .Column(column =>
-                            {
-                                column
-                                    .Item()
-                                    .AlignLeft()
-                                    .TranslateX(100)
-                                    .Text("العنوان: بيروت");
-                            });
-
-                        row.RelativeItem()
-                            .Column(column =>
-                            {
-                                column
-                                    .Item()
-                                    .AlignRight()
-                                    .Text("الاسم: محمد");
-                            });
-                    });
-
-
-                column
-                .Item()
-                .PaddingTop(10)
-                .Row(row =>
-                {
-                    row.RelativeItem()
-                        .Column(column =>
-                        {
-                            column
-                                .Item()
-                                .AlignLeft()
-                                .TranslateX(100)
-                                .Text("العنوان: بيروت");
-                        });
-
-                    row.RelativeItem()
-                        .Column(column =>
-                        {
-                            column
-                                .Item()
-                                .AlignRight()
-                                .Text("الاسم: محمد");
-                        });
-                });
             });
         }
 
@@ -152,9 +101,115 @@ namespace TestingQuestPdf.Template
         #region Content
         void ComposeContent(IContainer container)
         {
-            container.PaddingVertical(20).Column(column =>
+            container.PaddingVertical(20).
+            Column(column =>
             {
-                column.Item().Element(ComposeTable);
+                //column
+                //.Item()
+                //.Row(row =>
+                //{
+                //    row.RelativeItem()
+                //        .Column(column =>
+                //        {
+                //            column
+                //                .Item()
+                //                .AlignLeft()
+                //                .TranslateX(100)
+                //                .Text("العنوان: بيروت");
+                //        });
+
+                //    row.RelativeItem()
+                //        .Column(column =>
+                //        {
+                //            column
+                //                .Item()
+                //                .AlignRight()
+                //                .Text("الاسم: محمد");
+                //        });
+                //});
+
+                column
+                .Item()
+                .PaddingTop(20)
+                .Element(ComposeContentHeaderTable);
+
+                column
+                .Item()
+                .PaddingTop(20)
+                .Element(ComposeTable);
+            });
+        }
+
+        void ComposeContentHeaderTable(IContainer container) 
+        {
+            container
+            .Table(table =>
+            {
+                table.ColumnsDefinition(columns =>
+                {
+                    columns.RelativeColumn(4);
+                    columns.RelativeColumn(3);
+                    columns.RelativeColumn(1);
+                    columns.RelativeColumn(4);
+                    columns.RelativeColumn(3);
+                });
+
+                table.Header(header =>
+                {
+                    //row 1
+                    header.Cell().Element(CellValue).Text("07240964").AlignRight();
+                    header.Cell().Element(CellTitle).AlignRight().Text("الرقم القديم");
+                    header.Cell().AlignRight().Text("");
+                    header.Cell().Element(CellValue).AlignRight().Text("07240964");
+                    header.Cell().Element(CellTitle).AlignRight().Text("اشتراك رقم");
+
+
+                    header.Cell().Text("");
+                    header.Cell().AlignRight().Text("");
+                    header.Cell().AlignRight().Text("");
+                    header.Cell().AlignRight().Text("");
+                    header.Cell().AlignRight().Text("");
+
+                    //row 2
+                    header.Cell().Element(CellValue).Text("01/20/2000").AlignRight();
+                    header.Cell().Element(CellTitle).AlignRight().Text("تاريخ التأسيس");
+                    header.Cell().AlignRight().Text("");
+                    header.Cell().Element(CellValue).AlignRight().Text("محمد كمال عيتاني");
+                    header.Cell().Element(CellTitle).AlignRight().Text("الاسم");
+
+                    header.Cell().Text("");
+                    header.Cell().AlignRight().Text("");
+                    header.Cell().AlignRight().Text("");
+                    header.Cell().AlignRight().Text("");
+                    header.Cell().AlignRight().Text("");
+
+                    //row 3
+                    header.Cell().Element(CellValue).Text("07240964").AlignRight();
+                    header.Cell().Element(CellTitle).AlignRight().Text("الرقم القديم");
+                    header.Cell().AlignRight().Text("");
+                    header.Cell().Element(CellValue).AlignRight().Text("07240964");
+                    header.Cell().Element(CellTitle).AlignRight().Text("اشتراك رقم");
+
+                    static IContainer CellTitle(IContainer container)
+                    {
+                        return container
+                            .DefaultTextStyle(x => x.SemiBold().FontSize(12))
+                            .Border(1)
+                            .BorderColor(Colors.Grey.Lighten1)
+                            .Background(Colors.Grey.Lighten2)
+                            .Padding(5);
+                    }
+
+                    static IContainer CellValue(IContainer container)
+                    {
+                        return container
+                            .DefaultTextStyle(x => x.SemiBold().FontSize(12))
+                            .Border(1)
+                            .BorderColor(Colors.Grey.Lighten1)
+                            .Background(Colors.White)
+                            .Padding(5);
+                    }
+                });
             });
         }
 
@@ -200,7 +255,6 @@ namespace TestingQuestPdf.Template
                 }
             });
         }
-
         #endregion
 
         #region Compose Footer
