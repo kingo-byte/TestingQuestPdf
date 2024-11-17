@@ -236,12 +236,29 @@ namespace TestingQuestPdf.Template
         #region Compose Footer
         void ComposeFooter(IContainer container)
         {
-            container.AlignCenter().Text(x =>
+            container.Column(column =>
             {
-                x.CurrentPageNumber();
-                x.Span(" / ");
-                x.TotalPages();
+                column.Item().Element(Line);
+
+                column.Item().AlignRight().Text("ملاحظة: هذه الفاتورة وتفاصيلها تستند بالكامل إلى المعلومات الواردة من وزارة الاتصالات");
+
+                column.Item().PaddingTop(4).AlignRight().Text(x =>
+                {
+                    x.Span("page ");
+                    x.CurrentPageNumber();
+                    x.Span(" / ");
+                    x.TotalPages();
+                });
+
             });
+
+            static IContainer Line(IContainer container)
+            {
+                return container
+                    .Height(1)
+                    .Background(Colors.Grey.Lighten2)
+                    .ExtendHorizontal();
+            }
         }
         #endregion
     }
