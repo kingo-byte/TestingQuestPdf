@@ -13,6 +13,6 @@ InvoiceDataSource ds = new InvoiceDataSource();
 
 InvoiceTemplate document = new InvoiceTemplate(ds.GetInvoice());
 
-document.GeneratePdf("invoice .pdf");
+document.GeneratePdf("invoice.pdf");
 
 document.ShowInCompanion();
