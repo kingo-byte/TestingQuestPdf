@@ -104,30 +104,6 @@ namespace TestingQuestPdf.Template
             container.PaddingVertical(20).
             Column(column =>
             {
-                //column
-                //.Item()
-                //.Row(row =>
-                //{
-                //    row.RelativeItem()
-                //        .Column(column =>
-                //        {
-                //            column
-                //                .Item()
-                //                .AlignLeft()
-                //                .TranslateX(100)
-                //                .Text("العنوان: بيروت");
-                //        });
-
-                //    row.RelativeItem()
-                //        .Column(column =>
-                //        {
-                //            column
-                //                .Item()
-                //                .AlignRight()
-                //                .Text("الاسم: محمد");
-                //        });
-                //});
-
                 column
                 .Item()
                 .PaddingTop(20)
