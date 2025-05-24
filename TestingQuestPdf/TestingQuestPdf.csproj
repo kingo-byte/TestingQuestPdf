@@ -10,5 +10,9 @@
   <ItemGroup>
     <PackageReference Include="QuestPDF" Version="2024.10.3" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Content Include="Assets\sgbl-logo.png">
+    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  </Content>
+  </ItemGroup>
 </Project>
