@@ -12,9 +12,1249 @@ namespace TestingQuestPdf.DataSource
         public Invoice GetInvoice()
         {
             List<InvoiceDetails> list = new List<InvoiceDetails>() {
-                new InvoiceDetails { Code = "الاشتراك الثابت", Value = "20,000" }, 
-                new InvoiceDetails { Code = "الاشتراك المتغير", Value = "10,000" },
-                new InvoiceDetails { Code = "المجموع", Value = "30,000" }
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                },
+                new InvoiceDetails
+                {
+                    Inputter = "Mitani",
+                    ClientNbr = "201901151",
+                    InvoiceRef = "A2019-1",
+                    ClientName = "Mohammad Itani",
+                    Total = "20,000,000",
+                    FtRef = "FT00000000000001",
+                    Status = "Paid",
+                    PaymentDate = "29/10/2025",
+                    Channel = "Branch"
+                }
             };
 
 

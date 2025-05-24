@@ -27,8 +27,8 @@ namespace TestingQuestPdf.Template
             container
                        .Page(page =>
                        {
-                           page.Margin(50);
-                           page.Size(PageSizes.A4);
+                           page.Margin(20);
+                           page.Size(PageSizes.A4.Landscape());
                            page.Header().Element(ComposeHeader);
                            page.Content().Element(ComposeContent);
                            page.Footer().Element(ComposeFooter);
@@ -41,8 +41,14 @@ namespace TestingQuestPdf.Template
             TextStyle titleStyle = TextStyle
                 .Default
                 .FontSize(17)
-                .SemiBold()
-                .FontColor(Colors.Indigo.Darken1);
+                .Bold()
+                .FontColor(Colors.Black);
+
+            TextStyle labelStyle = TextStyle
+                .Default
+                .FontSize(13)
+                .Bold()
+                .FontColor(Colors.Black);
 
             container.Column(column =>
             {
@@ -74,25 +80,37 @@ namespace TestingQuestPdf.Template
                     {
                         column
                             .Item()
-                            .BorderTop(1)
-                            .BorderColor(Colors.Red.Lighten1)
-                            .BorderBottom(1)
-                            .BorderColor(Colors.Red.Lighten1)
-                            .Background(Colors.Grey.Lighten2)
                             .TranslateY(8)
                             .AlignCenter()
                             .Text(text =>
                             {
                                 text.DefaultTextStyle(TextStyle.Default.LineHeight(1));
 
-                                text.Line("نسخة عن فاتورة الهاتف")
-                                    .Style(titleStyle);
-
-                                text.Line("عن شهر حزيران 2024")
+                                text.Line("List of Port Daily Payments")
                                     .Style(titleStyle);
                             });
                     });
                 });
+
+                column
+                  .Item()
+                  .PaddingTop(10)
+                  .Row(row =>
+                  {
+                      row.RelativeItem().Column(column =>
+                      {
+                          column
+                            .Item()
+                            .AlignLeft()
+                            .Text(text =>
+                            {
+                                text.DefaultTextStyle(TextStyle.Default.LineHeight(1));
+                                text.Span("Operation Date: ")
+                                .Style(labelStyle);
+                                text.Span(DateTime.Now.ToString("dd/MM/yyyy"));
+                            });
+                      });
+                  });
             });
         }
 
@@ -107,85 +125,7 @@ namespace TestingQuestPdf.Template
                 column
                 .Item()
                 .PaddingTop(20)
-                .Element(ComposeContentHeaderTable);
-
-                column
-                .Item()
-                .PaddingTop(20)
                 .Element(ComposeTable);
-            });
-        }
-
-        void ComposeContentHeaderTable(IContainer container) 
-        {
-            container
-            .Table(table =>
-            {
-                table.ColumnsDefinition(columns =>
-                {
-                    columns.RelativeColumn(4);
-                    columns.RelativeColumn(3);
-                    columns.RelativeColumn(1);
-                    columns.RelativeColumn(4);
-                    columns.RelativeColumn(3);
-                });
-
-                table.Header(header =>
-                {
-                    //row 1
-                    header.Cell().Element(CellValue).Text("07240964").AlignRight();
-                    header.Cell().Element(CellTitle).AlignRight().Text("الرقم القديم");
-                    header.Cell().AlignRight().Text("");
-                    header.Cell().Element(CellValue).AlignRight().Text("07240964");
-                    header.Cell().Element(CellTitle).AlignRight().Text("اشتراك رقم");
-
-
-                    header.Cell().Text("");
-                    header.Cell().AlignRight().Text("");
-                    header.Cell().AlignRight().Text("");
-                    header.Cell().AlignRight().Text("");
-                    header.Cell().AlignRight().Text("");
-
-                    //row 2
-                    header.Cell().Element(CellValue).Text("01/20/2000").AlignRight();
-                    header.Cell().Element(CellTitle).AlignRight().Text("تاريخ التأسيس");
-                    header.Cell().AlignRight().Text("");
-                    header.Cell().Element(CellValue).AlignRight().Text("محمد كمال عيتاني");
-                    header.Cell().Element(CellTitle).AlignRight().Text("الاسم");
-
-                    header.Cell().Text("");
-                    header.Cell().AlignRight().Text("");
-                    header.Cell().AlignRight().Text("");
-                    header.Cell().AlignRight().Text("");
-                    header.Cell().AlignRight().Text("");
-
-                    //row 3
-                    header.Cell().Element(CellValue).Text("07240964").AlignRight();
-                    header.Cell().Element(CellTitle).AlignRight().Text("الرقم القديم");
-                    header.Cell().AlignRight().Text("");
-                    header.Cell().Element(CellValue).AlignRight().Text("07240964");
-                    header.Cell().Element(CellTitle).AlignRight().Text("اشتراك رقم");
-
-                    static IContainer CellTitle(IContainer container)
-                    {
-                        return container
-                            .DefaultTextStyle(x => x.SemiBold().FontSize(12))
-                            .Border(1)
-                            .BorderColor(Colors.Grey.Lighten1)
-                            .Background(Colors.Grey.Lighten2)
-                            .Padding(5);
-                    }
-
-                    static IContainer CellValue(IContainer container)
-                    {
-                        return container
-                            .DefaultTextStyle(x => x.SemiBold().FontSize(12))
-                            .Border(1)
-                            .BorderColor(Colors.Grey.Lighten1)
-                            .Background(Colors.White)
-                            .Padding(5);
-                    }
-                });
             });
         }
 
@@ -195,35 +135,56 @@ namespace TestingQuestPdf.Template
             {
                 table.ColumnsDefinition(columns =>
                 {
-                    columns.RelativeColumn(5);
-                    columns.RelativeColumn(5);
+                    columns.RelativeColumn(1);
+                    columns.RelativeColumn(1);
+                    columns.RelativeColumn(1);
+                    columns.RelativeColumn(1);
+                    columns.RelativeColumn(1);
+                    columns.RelativeColumn(2);
+                    columns.RelativeColumn(1);
+                    columns.RelativeColumn(1);
+                    columns.RelativeColumn(1);
                 });
 
                 table.Header(header =>
                 {
-                    header.Cell().Element(CellStyle).Text("القيمة ل.ل").AlignRight();
-                    header.Cell().Element(CellStyle).AlignRight().Text("الخدمة");
+                    header.Cell().Element(CellStyle).Text("Inputter");
+                    header.Cell().Element(CellStyle).Text("Client Nbr");
+                    header.Cell().Element(CellStyle).Text("Invoice Ref");
+                    header.Cell().Element(CellStyle).Text("Client Name");
+                    header.Cell().Element(CellStyle).Text("Total");
+                    header.Cell().Element(CellStyle).Text("FT Ref");
+                    header.Cell().Element(CellStyle).Text("Status");
+                    header.Cell().Element(CellStyle).Text("Payment Date");
+                    header.Cell().Element(CellStyle).Text("Channel");
 
                     static IContainer CellStyle(IContainer container)
                     {
                         return container
-                            .DefaultTextStyle(x => x.SemiBold().FontSize(12)) // Make the text semi-bold and larger
+                            .DefaultTextStyle(x => x.SemiBold().FontSize(9))
                             .Border(1)
                             .BorderColor(Colors.Grey.Lighten1)
-                            .Background(Colors.Grey.Lighten2)
-                            .Padding(5);
+                            .Padding(2);
                     }
                 });
 
 
                 foreach (InvoiceDetails item in Invoice.InvoiceDetails)
                 {
-                    table.Cell().Element(CellStyle).Text(item.Value.ToString()).AlignRight();
-                    table.Cell().Element(CellStyle).Text(item.Code).AlignRight();
+                    table.Cell().Element(CellStyle).Text(item.Inputter.ToString());
+                    table.Cell().Element(CellStyle).Text(item.ClientNbr);
+                    table.Cell().Element(CellStyle).Text(item.InvoiceRef);
+                    table.Cell().Element(CellStyle).Text(item.ClientName);
+                    table.Cell().Element(CellStyle).Text(item.Total);
+                    table.Cell().Element(CellStyle).Text(item.FtRef);
+                    table.Cell().Element(CellStyle).Text(item.Status);
+                    table.Cell().Element(CellStyle).Text(item.PaymentDate);
+                    table.Cell().Element(CellStyle).Text(item.Channel);
 
                     static IContainer CellStyle(IContainer container)
                     {
                         return container
+                            .DefaultTextStyle(x => x.SemiBold().FontSize(9))
                             .Border(1)
                             .BorderColor(Colors.Grey.Lighten1)
                             .Padding(5);
@@ -238,10 +199,6 @@ namespace TestingQuestPdf.Template
         {
             container.Column(column =>
             {
-                column.Item().Element(Line);
-
-                column.Item().AlignRight().Text("ملاحظة: هذه الفاتورة وتفاصيلها تستند بالكامل إلى المعلومات الواردة من وزارة الاتصالات");
-
                 column.Item().PaddingTop(4).AlignRight().Text(x =>
                 {
                     x.Span("page ");
@@ -251,14 +208,6 @@ namespace TestingQuestPdf.Template
                 });
 
             });
-
-            static IContainer Line(IContainer container)
-            {
-                return container
-                    .Height(1)
-                    .Background(Colors.Grey.Lighten1)
-                    .ExtendHorizontal();
-            }
         }
         #endregion
     }
